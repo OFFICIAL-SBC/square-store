@@ -1,10 +1,11 @@
 @import "./reset.css";
+@import './fonts.css';
+@import './components/header.css';
 
-:root{
+:root {
     --color-primary: #ED1C24;
     --color-black:#191919;
     --color-white:#FFFFFF;
     --color-darker-gray: #CCCCCC;
     --color-lighter-gray: #FAFAFA;
-
 }
