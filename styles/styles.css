@@ -1,6 +1,8 @@
 @import "./reset.css";
 @import './fonts.css';
 @import './components/header.css';
+@import './components/footer.css';
+@import './components/new-arrivals.css';
 
 :root {
     --color-primary: #ED1C24;
@@ -8,4 +10,11 @@
     --color-white:#FFFFFF;
     --color-darker-gray: #CCCCCC;
     --color-lighter-gray: #FAFAFA;
+}
+main{
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    min-height: calc(100dvh - 10rem);
+    padding: 2rem;
 }
