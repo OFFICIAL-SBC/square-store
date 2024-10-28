@@ -84,5 +84,45 @@
     transition: all 300ms;
 }
 
+.new-arrivals__select-list{
+    display: none;
+    width: 70%;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    background-color: var(--color-lighter-gray);
+    color: #8a8a8a;
+    border: solid 1px var(--color-darker-gray);
+    border-radius: 1.2rem;
+    padding: 1rem;
+}
+
+.new-arrivals__cards-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.6rem;
+}
+
+.new-arrivals__card-item figure{
+    width: 100%;
+    height: auto;
+}
+
+.new-arrivals__card-item figure{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .new-arrivals__select-list{
+        display: block;
+    }
+
+    .new-arrivals__nav-list{
+        display: none;
+    }
+}
+
 
 
