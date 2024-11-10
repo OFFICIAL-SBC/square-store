@@ -1,4 +1,5 @@
 .main__new-arrivals{
+    font-family: 'Poppins';
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,6 @@
 }
 
 .new-arrivals__title-description > p{
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 1.6rem;
     text-align: center;
@@ -54,7 +54,6 @@
 .new-arrivals__nav-item-list > a{
     color: #8A8A8A;
     font-size: 1.6rem;
-    font-family: 'Poppins';
     font-weight: 400;
     text-decoration: none;
     transition: all 300ms;
@@ -78,7 +77,6 @@
 .new-arrivals__nav-item-list--selected > a {
     color: var(--color-white);
     font-size: 1.6rem;
-    font-family: 'Poppins';
     font-weight: 400;
     text-decoration: none;
     transition: all 300ms;
@@ -87,7 +85,6 @@
 .new-arrivals__select-list{
     display: none;
     width: 70%;
-    font-family: 'Poppins';
     font-size: 1.6rem;
     background-color: var(--color-lighter-gray);
     color: #8a8a8a;
@@ -101,11 +98,14 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1.6rem;
+    margin-block: 1rem;
 }
 
 /* * Card Item */
 
 .new-arrivals__card-item{
+    width: 100%;
+    max-width: 29rem;
     border: solid 1px #E5E5E5;
     border-radius: 1rem;
     padding: 1.6rem;
@@ -113,17 +113,110 @@
 
 .new-arrivals__card-item figure{
     width: 100%;
-    height: auto;
+    height: 24rem;
     border-radius: 0.75rem;
     overflow: hidden;
 }
 
 .new-arrivals__card-item figure img{
     width: 100%;
-    height: auto;
-    aspect-ratio: 1;
+    height: 100%;
     object-fit: cover;
 }
+
+.new-arrivals__card-item h3{
+    color: var(--color-black);
+    font-weight: 500;
+    font-size:2rem;
+}
+
+.new-arrivals__card-item > span{
+    display: block;
+    color: var(--color-black);
+    opacity: 0.5;
+    font-size: 1.2rem;
+}
+
+.card-item__prices{
+    display: flex;
+    align-items: flex-end;
+    color: var(--color-black);
+    font-weight: 500;
+    font-size:1.6rem;
+    gap: 1rem;
+}
+
+.card-item__prices > .card-item__prices--with-discount{
+    font-size: 2.4rem;
+}
+
+.card-item__prices > .card-item__prices--normal{
+    font-size: 1.6rem;
+    opacity: 0.5;
+    text-decoration: line-through;
+    padding-block-end: 0.45rem;
+}
+
+.card-item__colors{
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 1rem;
+    gap: 1rem;
+}
+
+
+.card-item__colors > .card-item__color-item{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.card-item__colors > .card-item__color-item:hover{
+    border: solid 1px var(--color-black);
+}
+
+.card-item__color-item--gray-color{
+    background-color: #D9D9D9;
+}
+
+.card-item__color-item--red-color{
+    background-color: var(--color-primary);
+}
+
+.new-arrivals__card-item > button{
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--color-primary);
+    background-color: transparent;
+    border: solid 1px var(--color-primary);
+    transition: all 150ms;
+    cursor: pointer;
+}
+
+.new-arrivals__card-item > button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+
+/**New arrivals View More button*/
+
+.main__new-arrivals > button{
+    width: 20rem;
+    height: 5.7rem;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    border: none;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    margin-block-start: 1rem;
+}
+
 
 @media screen and (max-width: 1024px) {
     .new-arrivals__select-list{
