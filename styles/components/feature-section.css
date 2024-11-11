@@ -1,0 +1,29 @@
+.main__features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6rem;
+}
+
+.main__feature-container{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.main__feature-container div{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}   
+
+.main__feature-container div h4{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.main__feature-container div p{
+    font-weight: 400;
+    font-size: 1.6rem;
+}  

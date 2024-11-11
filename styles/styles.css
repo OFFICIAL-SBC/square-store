@@ -5,6 +5,8 @@
 @import './components/new-arrivals.css';
 @import './components/summer-season-sale.css';
 @import './components/main-header.css';
+@import './components/brand-section.css';
+@import './components/feature-section.css';
 
 :root {
     --color-primary: #ED1C24;

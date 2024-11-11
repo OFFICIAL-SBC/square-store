@@ -1,0 +1,7 @@
+.main__brand-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 18rem;
+    margin-block: 2rem;
+}
