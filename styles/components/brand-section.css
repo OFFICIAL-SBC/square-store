@@ -5,3 +5,11 @@
     height: 18rem;
     margin-block: 2rem;
 }
+
+.main__brand-section figure{
+    width: 15%;
+}
+
+.main__brand-section figure img{
+    width: 100%;
+}

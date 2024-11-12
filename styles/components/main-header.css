@@ -44,3 +44,9 @@
     background-color: var(--color-black);
     color: #DBD0CCCC;
 }
+
+@media screen and (max-width: 768px){
+    .main__header figure{
+        display: none;
+    }
+}

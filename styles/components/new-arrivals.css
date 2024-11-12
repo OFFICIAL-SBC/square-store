@@ -102,6 +102,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 1.6rem;
     margin-block: 1rem;
+    transition: all 150ms;
 }
 
 /* * Card Item */
@@ -206,7 +207,6 @@
     color: var(--color-white);
 }
 
-
 /**New arrivals View More button*/
 
 .main__new-arrivals > button{
@@ -234,6 +234,14 @@
 
     .new-arrivals__nav-list{
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .new-arrivals__cards-container{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 1.6rem;
     }
 }
 
