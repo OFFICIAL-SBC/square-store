@@ -7,7 +7,7 @@
 @import './components/main-header.css';
 @import './components/brand-section.css';
 @import './components/feature-section.css';
-
+@import './components/aside.css';
 :root {
     --color-primary: #ED1C24;
     --color-black:#191919;

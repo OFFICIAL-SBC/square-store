@@ -14,6 +14,16 @@ header{
     margin: 1rem;
 }
 
+.header-above-part__menu-icon{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
 .header__logo-container{
     height: 37px;
     width: 120px;
@@ -66,8 +76,24 @@ header{
     color: var(--color-primary);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 630px){
 
+    .header__above-part{
+        justify-content: center;
+
+    }
+
+    .header-above-part__menu-icon{
+        display: inline-block;
+    }
+
+    .header__navbar{
+        display: none;
+    }
+
+    .header__icons-container{
+        display: none;
+    }
 }
 
 
