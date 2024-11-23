@@ -28,7 +28,7 @@
 .banner__content-container{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     height: 85%;
     align-items: center;
     justify-content: space-evenly;
@@ -50,6 +50,7 @@
     font-weight: 400;
     font-size: 1.6rem;
     text-align: center;
+    width: 80%;
     z-index: 1; 
 }
 

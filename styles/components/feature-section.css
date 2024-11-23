@@ -1,29 +1,86 @@
-.main__features{
+.main__features {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 6rem;
+    gap: 40px; 
+    padding: 20px;
+    max-width: 1240px; 
+    margin: 0 auto;
 }
 
-.main__feature-container{
+.main__feature-container {
     display: flex;
-    width: 20%;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 15px; 
+    max-width: 280px; 
+}
+
+/* SVG iconos */
+.main__feature-container svg {
+    flex-shrink: 0; /*This avoids the icons to reduce their size*/
+    width: 50px;
+    height: 50px;
+    color: #000;
 }
 
 .main__feature-container div{
     font-family: 'Poppins';
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}   
+}
 
 .main__feature-container div h4{
     font-weight: 500;
     font-size: 2rem;
+    transition: all 150ms;
 }
 
 .main__feature-container div p{
     font-weight: 400;
     font-size: 1.6rem;
-}  
+    transition: all 150ms;
+}
+
+/* Responsiveness */
+@media (max-width: 1112px) {
+    .main__feature-container div h4{
+        font-size: 1.6rem;
+    }
+    
+    .main__feature-container div p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__features {
+        flex-wrap: wrap; 
+        gap: 20px;
+    }
+    .main__feature-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 200px; /* Reduce el tamaño máximo en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .main__feature-container {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        gap: 10px;
+    }
+
+    .main__feature-container svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main__feature-container h4 {
+        font-size: 0.9rem;
+    }
+
+    .main__feature-container p {
+        font-size: 0.75rem;
+    }
+}
