@@ -15,6 +15,10 @@ aside{
     z-index: 2;
 }
 
+.aside__sideMenuOpened{
+    display: flex;
+}
+
 .aside__close-icon{
     position: absolute;
     top: 1rem;
@@ -57,13 +61,6 @@ aside{
 
 .aside__navbar-item  > a:hover{
     color: var(--color-primary);
-}
-
-
-@media screen and (max-width: 630px){
-    aside{
-        display: flex;
-    }
 }
 
 @media screen and (max-width: 505px){
