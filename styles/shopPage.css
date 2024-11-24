@@ -1,13 +1,9 @@
+
 @import "./reset.css";
 @import './fonts.css';
 @import './components/header.css';
-@import './components/footer.css';
-@import './components/HomePage/new-arrivals.css';
-@import './components/HomePage/summer-season-sale.css';
-@import './components/HomePage/main-header.css';
-@import './components/HomePage/brand-section.css';
-@import './components/HomePage/feature-section.css';
 @import './components/aside.css';
+@import './components/ShopPage/FilterSection.css';
 :root {
     --color-primary: #ED1C24;
     --color-black:#191919;
@@ -16,6 +12,8 @@
     --color-lighter-gray: #FAFAFA;
 }
 main{
+    display: flex;
     width: 100%;
+    margin-block: 2rem;
     min-height: calc(100dvh - 10rem);
 }

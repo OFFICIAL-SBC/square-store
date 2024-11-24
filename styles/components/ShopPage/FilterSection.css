@@ -1,0 +1,67 @@
+.aside__FilterSection{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: aqua;
+    padding: 1rem;
+    font-family: 'Volkhov';
+}
+
+/** Aside section*/
+.aside__FilterSection h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.aside__size-section{
+    width: 50%;
+    background-color: beige;
+}
+
+.size-section__size-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 15rem;
+    margin-block: 1rem;
+    gap: 0.5rem;
+}
+
+.size-section__size-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8A8A8A;
+    font-size: 1.2rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 1rem;
+    border: solid 1px #8A8A8A;
+}
+
+.aside__size-section h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.aside__colors-section{
+    width: 95%;
+    background-color: beige;
+}
+.colors-section__colors-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.colors-section__colors-container div{
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+}
+/** Pictures Section*/
+
+.main__picture-container{
+    flex: 1;
+    padding: 1rem;
+}

@@ -1,4 +1,4 @@
-aside{
+.aside__NavigationMenu{
     display: none;
     flex-direction: column;
     padding: 1rem;
