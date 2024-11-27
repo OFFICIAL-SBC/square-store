@@ -1,22 +1,29 @@
+/*! Aside section*/
+
 .aside__FilterSection{
     display: flex;
     flex-direction: column;
     width: 25%;
-    background-color: aqua;
     padding: 1rem;
     font-family: 'Volkhov';
 }
 
-/** Aside section*/
 .aside__FilterSection h2{
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 3rem;
 }
 
+.aside__FilterSection h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+
+
+/** Size section*/
 .aside__size-section{
     width: 50%;
-    background-color: beige;
 }
 
 .size-section__size-container{
@@ -37,31 +44,190 @@
     height: 4.2rem;
     border-radius: 1rem;
     border: solid 1px #8A8A8A;
+    cursor: pointer;
 }
 
-.aside__size-section h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-
+/** Colors section*/
 .aside__colors-section{
-    width: 95%;
-    background-color: beige;
+    width: 100%;
+    margin-block: 1rem;
 }
+
 .colors-section__colors-container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.colors-section__colors-container div{
+.colors-section__color{
     border-radius: 100%;
     width: 4rem;
     height: 4rem;
+    margin: 0.5rem;
+    cursor: pointer;
 }
-/** Pictures Section*/
+
+.colors-section__color--red{
+    background-color: #ff6c6c;
+}
+
+.colors-section__color--orange{
+    background-color: #ff7628;
+}
+
+.colors-section__color--yellow{
+    background-color: #fff06c;
+}
+
+.colors-section__color--green{
+    background-color: #9bff6b;
+}
+
+.colors-section__color--light-green{
+    background-color: #6bff9d;
+}
+
+.colors-section__color--seablue{
+    background-color: #6bffdb;
+}
+
+.colors-section__color--blue{
+    background-color: #6cb9ff;
+}
+
+.colors-section__color--light-blue{
+    background-color: #6cf6ff;
+}
+
+.colors-section__color--king-blue{
+    background-color: #6d7bff;
+}
+
+.colors-section__color--purple-blue{
+    background-color: #8a6cfe;
+}
+
+.colors-section__color--purple{
+    background-color: #b66cff;
+}
+
+.colors-section__color--pink{
+    background-color: #fc6cff;
+}
+
+/** Prices section*/
+.aside__prices-section{
+    margin-block: 2rem;
+}
+
+.aside__prices-section h3{
+    margin-bottom: 2rem;
+}
+
+.aside__prices-section p{
+    font-family: 'Poppins';
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #8A8A8A;
+}
+
+/** Brands section*/
+
+.brands-section__brands-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 70%;
+}
+
+.brands-section__title-icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1.2rem;
+}
+
+.brands-section__brands-container p{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #8A8A8A;
+}
+
+/** Collections section*/
+.aside__collections-section{
+    margin-block: 1.5rem;
+}
+
+.aside__collections-section p{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #8A8A8A;
+    margin-block: 1rem;
+}
+
+/** Tags section*/
+.tags-section__tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-block: 1.5rem;
+}
+
+.tags-section__tags-container p{
+    font-family: 'Jost';
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #8A8A8A;
+}
+
+/*! Pictures Section*/
 
 .main__picture-container{
     flex: 1;
     padding: 1rem;
+}
+
+.picture-container__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-picture-container__filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+.header-picture-container__filter h3{
+    font-family: 'Volkhov';
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.header-picture-container__layout-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.header-picture-container__layout-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.4rem;
+    height: 3.4rem;
+    background-color: #F2F2F2;
+}
+
+.picture-container__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1rem; 
+    padding: 1rem; 
+    justify-items: center; 
+    align-items: center; 
 }
