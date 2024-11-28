@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/shopPage.css">
     <link rel="icon" href="https://www.square1.io/favicon.svg">
     <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/shopPage.js"></script>
 </head>
 <body>
     <header>
@@ -279,17 +280,15 @@
                 </div>
             </div>
             <div class="picture-container__grid">
-                <article class="picture-container-grid__card-item">
-                    <figure>
-                        <img src="./assets/img/women.jpg" alt="">
-                    </figure>
-                    <h3>Chaqueta de lana</h3>
-                    <span class="card-item__prices--with-discount">$95.50</span>
-                    <div class="card-item__colors">
-                        <button class="card-item__color-item card-item__color-item--gray-color"></button>
-                        <button class="card-item__color-item card-item__color-item--red-color"></button>
-                    </div>
-                </article>
+                <!-- I add everything with js -->
+            </div>
+            <div class="picture-container__available-pages">
+                <div class="picture-container__available-pages--selected">1</div>
+                <div>2</div>
+                <div>3</div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="available-pages__other-pages">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                </svg>
             </div>
         </div>
     </main>
