@@ -4,6 +4,8 @@
 @import './components/header.css';
 @import './components/aside.css';
 @import './components/ShopPage/FilterSection.css';
+@import './components/ShopPage/PictureSection.css';
+
 :root {
     --color-primary: #ED1C24;
     --color-black:#191919;

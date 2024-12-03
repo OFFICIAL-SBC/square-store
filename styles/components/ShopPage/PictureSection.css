@@ -1,0 +1,185 @@
+/*! Pictures Section*/
+
+.main__picture-container{
+    flex: 1;
+    padding: 1rem;
+}
+
+.picture-container__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header-picture-container__filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
+}
+
+.header-picture-container__filter h3{
+    font-family: 'Volkhov';
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.header-picture-container__layout-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25rem;
+}
+
+.header-picture-container__layout-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.4rem;
+    height: 3.4rem;
+    background-color: #F2F2F2;
+}
+
+.picture-container__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 1rem; 
+    padding: 1rem; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.picture-container-grid__card-item{
+    max-width: 32rem;
+    margin-bottom: 1rem;
+}
+
+.picture-container-grid__card-item figure{
+    width: 100%;
+}
+
+.picture-container-grid__card-item figure img{
+    width: 100%;
+}
+
+.picture-container-grid__card-item h3{
+    font-family: 'Volkhov';
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.card-item__price{
+    font-family: 'Jost';
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-block: 1rem;
+}
+
+.card-item__colors{
+    display: flex;
+    gap: 1rem;
+}
+
+.card-item__colors > div:first-child{
+    border: solid 1px #000000;
+}
+
+.card-item__color-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    border: solid 2px #e6e6e6;
+    cursor: pointer;
+}
+
+.card-item__color-item--inner-circle{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+} 
+
+.card-item__color-item--yellow-color{
+    background-color: #FFD700;
+}
+
+.card-item__color-item--black-color{
+    background-color: #000000;
+}
+.card-item__color-item--blue-cream-color{
+    background-color: #8DB4D2;
+}
+.card-item__color-item--light-pink-color{
+    background-color: #FFD1DC;
+}
+.card-item__color-item--lavender-color{
+    background-color: #EBE6DB;
+}
+.card-item__color-item--light-green-color{
+    background-color: #C1E1C1;
+}
+.card-item__color-item--light-blue-color{
+    background-color: #B1C5D4;
+}
+.card-item__color-item--dark-blue-color{
+    background-color: #063E66;
+}
+.card-item__color-item--purple-color{
+    background-color: #C6AEC7;
+}
+.card-item__color-item--white-color{
+    background-color: #FFFFFF;
+}
+.card-item__color-item--brown-color{
+    background-color: #836953;
+}
+.card-item__color-item--lighter-blue-color{
+    background-color: #BEDCE3;
+}
+
+.picture-container__available-pages{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+.picture-container__available-pages div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    font-family: 'Jost';
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.picture-container__available-pages--selected{
+    background-color: #f3f3f3;
+}
+.available-pages__other-pages{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:630px){
+    .picture-container__header{
+        justify-content: center;
+    }
+    .header-picture-container__layout-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px){
+    .picture-container__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+
+}
