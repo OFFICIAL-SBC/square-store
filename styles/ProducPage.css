@@ -1,0 +1,20 @@
+@import "./reset.css";
+@import './fonts.css';
+@import './components/header.css';
+@import './components/aside.css';
+@import './components/ProductPage/PictureSection.css';
+
+:root {
+    --color-primary: #ED1C24;
+    --color-black:#191919;
+    --color-white:#FFFFFF;
+    --color-darker-gray: #CCCCCC;
+    --color-lighter-gray: #FAFAFA;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    margin-block: 2rem;
+    min-height: calc(100dvh - 10rem);
+}
