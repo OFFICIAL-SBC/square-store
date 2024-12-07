@@ -3,6 +3,7 @@
 @import './components/header.css';
 @import './components/aside.css';
 @import './components/ProductPage/PictureSection.css';
+@import './components/ProductPage/DetailsSection.css';
 
 :root {
     --color-primary: #ED1C24;
@@ -17,4 +18,5 @@ main{
     width: 100%;
     margin-block: 2rem;
     min-height: calc(100dvh - 10rem);
+    gap: 2rem;
 }
