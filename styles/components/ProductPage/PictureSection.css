@@ -1,10 +1,10 @@
 .main__pictures-container{
     display: flex;
-    width: 50%;
+    width: 45%;
     gap: 2rem;
 }
 
-.main__pictures-container figure{
+.main__pictures-container > figure{
     flex: 1;
 }
 
@@ -26,10 +26,28 @@
 
 .pictures-container__side-menu > figure{
     width: 7.9rem;
-    height: 9rem;
     padding: 0.6rem;
 }
 
 .pictures-container__side-menu > figure > img{
     width: 100%;
+}
+
+
+@media screen and (max-width:768px){
+    .main__pictures-container{
+        flex-direction: column;
+    }
+
+    .main__pictures-container > figure{
+        order: -1;
+        flex: 0;
+        margin-inline: 1rem;
+    }
+
+    .pictures-container__side-menu{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

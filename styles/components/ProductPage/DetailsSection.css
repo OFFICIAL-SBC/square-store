@@ -1,5 +1,5 @@
 .main__deatils-container{
-    flex: 1;
+    width: 55%;
     padding: 2rem;
 }
 
@@ -114,6 +114,7 @@
     font-weight: 400;
     font-size: 1.8rem;
     color: #FF706B;
+    transition: all 150ms;
 }
 
 .hurry-up-section__timer{
@@ -258,3 +259,222 @@
     font-weight: 400;
     font-size: 1.6rem;
 }
+
+.buttons-container__button-add-to-the-cart{
+    width: 100%;
+    background: none;
+    font-family: 'Volkhov';
+    font-weight: 400;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.buttons-container__button-add-to-the-cart:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
+.details-container__actions-section{
+    display: flex;
+    width: 100%;
+    border-bottom: solid 1px #EEEEEE;
+    margin-block-start: 4rem;
+    gap: 3rem;
+}
+
+.details-container__actions-section > div{
+    position: relative;
+    display: flex;
+    height: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1.2rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.details-container__actions-section > div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.details-container__actions-section > div:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.details-container__actions-section > div > p{
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.details-container__estimated-delivery{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block-start: 3rem;
+}
+
+.estimated-delivery__label{
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.estimated-delivery__actual-date{
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.details-container__free-shipping{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.details-container__free-shipping p{
+    font-family: 'Volkhov';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.details-container__payment-methods{
+    width: 100%;
+    height: 11rem;
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: #F8F8F8;
+}
+
+.details-container__payment-methods p{
+    font-family: 'Volkhov';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+
+@media screen and (max-width:1100px){
+
+    .hurry-up-section__timer{
+        margin-right: 0rem;
+    }
+
+    .details-container__hurry-up-container p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:877px){
+
+    .hurry-up-section__timer{
+        width: 15rem;
+    }
+
+    .details-container__hurry-up-container > p{
+        margin-block-end: 1rem;
+    }
+
+    .details-container__hurry-up-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .details-container__payment-methods figure{
+        width: 25rem;
+    }
+
+    .details-container__payment-methods figure img{
+        width: 100%;
+    }
+
+    .details-container__payment-methods p{
+        font-size: 1.2rem;
+    }
+
+    .estimated-delivery__label{
+        font-size: 1.2rem;
+    }
+    
+    .estimated-delivery__actual-date{
+        font-size: 1.2rem;
+    }
+
+    .details-container__free-shipping p{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+    .details-container__title-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .details-container__prices-container .prices-container__normal-price{
+        font-size: 2rem;
+    }
+    
+    .details-container__prices-container .prices-container__discounted-price{
+        font-size: 1.2rem;
+    }
+
+    .details-container__prices-container > div> span {
+        font-size: 1rem;
+    }
+    .details-container__people-waching-container p {
+        font-size: 1.2rem;
+    }
+
+    .quantity-section__buttons-container{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .buttons-container__increase-decrease-section{
+        width: 100%;
+    }
+
+    .details-container__actions-section > div > p{
+        font-size: 1.2rem;
+    }
+
+    .buttons-container__button-add-to-the-cart{
+        height: 4.6rem;
+    }
+
+    .details-container__actions-section {
+        flex-direction: column;
+        margin-block-start: 1.5rem;
+        align-items: center;
+        gap:1rem;
+    }
+    .details-container__actions-section > div{
+        height: 1rem;
+    }
+
+    .details-container__payment-methods figure {
+        width: 15rem;
+    }
+}
+
+
+
