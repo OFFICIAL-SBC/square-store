@@ -4,6 +4,7 @@
 @import './components/aside.css';
 @import './components/ProductPage/PictureSection.css';
 @import './components/ProductPage/DetailsSection.css';
+@import './components/ProductPage/PopUpSideMenu.css';
 
 :root {
     --color-primary: #ED1C24;
