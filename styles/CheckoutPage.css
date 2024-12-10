@@ -1,0 +1,44 @@
+@import "./reset.css";
+@import './fonts.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/PopUpSideMenu.css';
+@import './components/aside.css';
+@import './components/CheckoutPage/FormSection.css';
+@import './components/CheckoutPage/ProductSection.css';
+:root {
+    --color-primary: #ED1C24;
+    --color-black:#191919;
+    --color-white:#FFFFFF;
+    --color-darker-gray: #CCCCCC;
+    --color-lighter-gray: #FAFAFA;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-block-start: 2rem;
+    min-height: calc(100dvh - 10rem);
+}
+
+main h1{
+    font-family: 'Volkhov';
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.main__checkout-container{
+    display: flex;
+    width: 100%;
+    margin-block-start: 2rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 570px){
+    .main__checkout-container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

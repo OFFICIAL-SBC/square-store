@@ -1,0 +1,182 @@
+.checkout-container__form-section{
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 8rem;
+    width: 45%;
+}
+
+.checkout-container__form-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 2rem;
+}
+
+input, select {
+    width: 100%;
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
+    border: 1px solid #8A8A8A;
+}
+
+.form-section__section{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.form-section__section h2{
+    font-family: 'Volkhov';
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.form-section__section--contact-section div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-section__section--contact-section input{
+    margin-block-start: 1.5rem;
+}
+
+.form-section__section select{
+    appearance: none;
+}
+
+.form-section__section--delivery-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-block: 1rem;
+    gap: 1rem;
+}
+
+.delivery-container__select-container{
+    position: relative;
+    grid-column:1 / span 2;
+}
+
+.delivery-container__select-container svg{
+    position: absolute;
+    top: 2.8rem;
+    right: 3rem;
+}
+
+.form-section__section--delivery-container  input[placeholder="First Name"]{
+    grid-column:1 / span 1;
+}
+
+.form-section__section--delivery-container  input[placeholder="Last Name"] {
+    grid-column: 2 / span 1;
+}
+
+.form-section__section--delivery-container  input[placeholder="Address"] {
+    grid-column: 1 / span 2;
+}
+
+.delivery-container__checkbox{
+    margin-block: 1rem;
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    color: #8A8A8A;
+}
+
+.payment-container__select-container{
+    position: relative;
+    margin-block-start: 2rem;
+}
+
+.payment-container__select-container svg{
+    position: absolute;
+    top: 2.8rem;
+    right: 3rem;
+}
+
+.form-section__section--payment-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+    gap: 1rem;
+    background-color: #f5f5f5;
+}
+
+.payment-container__card-number{
+    position: relative;
+    grid-column:1 / span 2;
+}
+
+.payment-container__card-number svg{
+    position: absolute;
+    top: 2.2rem;
+    right: 3rem;
+}
+
+.form-section__section--payment-container  input[placeholder="Expiration Date"] {
+    grid-column: 1 / span 1;
+}
+
+.form-section__section--payment-container input[placeholder="Security Code"] {
+    grid-column: 2 / span 1;
+}
+
+.form-section__section--payment-container input[placeholder="Card Holder Name"] {
+    grid-column: 1 / span 2;
+}
+
+.payment-container__checkbox{
+    margin-block: 1rem;
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    color: #8A8A8A;
+}
+
+.checkout-container__form-section form button{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    background-color: var(--color-primary);
+} 
+.checkout-container__form-section footer{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px){
+
+    .form-section__section--contact-section div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .checkout-container__form-section{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    
+    .checkout-container__form-section{
+        width: 100%;
+        margin-block-start: 1rem;
+    }
+
+}
+

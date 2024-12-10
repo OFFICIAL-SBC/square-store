@@ -7,6 +7,7 @@
 @import './components/HomePage/main-header.css';
 @import './components/HomePage/brand-section.css';
 @import './components/HomePage/feature-section.css';
+@import './components/PopUpSideMenu.css';
 @import './components/aside.css';
 :root {
     --color-primary: #ED1C24;

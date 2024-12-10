@@ -1,4 +1,5 @@
 .aside-container__shadow-box{
+    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -6,6 +7,10 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
+}
+
+.aside-container__shadow-box--visible{
+    display: block;
 }
 
 .aside-container__shadow-box > aside{

@@ -5,6 +5,7 @@
 @import './components/aside.css';
 @import './components/ShopPage/FilterSection.css';
 @import './components/ShopPage/PictureSection.css';
+@import './components/PopUpSideMenu.css';
 
 :root {
     --color-primary: #ED1C24;
